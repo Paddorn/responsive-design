@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(44, 41, 38);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-header {
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+#logo {
+  color: rgb(238, 164, 80);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  justify-content: space-around;
+  width: 3rem;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+#main-header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header li {
+  margin: 0 1rem;
+}
+
+#main-header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+  color: rgb(228, 163, 44);
+}
+
+#side-drawer {
+  background-color: rgb(29, 26, 27);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer ul {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: rgb(253, 239, 213);
+}
+
+main h1 {
+  color: rgb(238, 164, 80);
+  font-size: 3rem;
+  text-align: center;
+}
+
+#latest-products {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+#latest-products ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.food-item {
+  background-color: rgb(228, 206, 182);
+  border-radius: 6px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.food-item img {
+  height: 15rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.food-item-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn {
+  background-color: rgb(228, 157, 44);
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+
+.btn:hover {
+  background-color: rgb(221, 134, 34);
+}
+
+@media (max-width: 48rem) {
+  #main-header nav {
+    display: none;
+  }
+  main h1 {
+    font-size: 1.5rem;
+  }
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
+}
